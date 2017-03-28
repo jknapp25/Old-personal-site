@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+
+    <!-- To Do:
+        Make it so the whole thing can be accessed by scrolling
+        Fix page transitioning when already active
+        Add Contact Form
+        Fix experiments weirdness on resize
+        Consolidate Code
+          -Add multiple classes in one line
+          -Use code on parent elements to clean up event handlers
+        Add my name slider and info
+    -->
+
+    <!-- Fluid Page Container -->
+    <div class="container-fluid">
+
+      <div class="full-window">
+
+        <!-- Intro Slider -->
+        <div id="intro-slider-name">
+          <p>Josh Knapp</p>
+        </div>
+
+        <div id="intro-slider-info">
+          <p>Developer / Engineer / Maker</p>
+        </div>
+
+        <!-- Nav block -->
+        <div class="nav-block exact-center">
+          <div class="nav-button nav-button-1">
+            <img class="nav-button-img" src="http://res.cloudinary.com/jknapp25/image/upload/v1489124129/009-video-camera_crp8jx.png">
+          </div>
+          <div class="nav-button nav-button-2">
+            <img class="nav-button-img" src="https://img.clipartfest.com/cac6bde106ac80709681a9b168718532_download-this-image-as-beaker-outline-clipart_522-598.png">
+          </div>
+          <div class="nav-button nav-button-3">
+            <img class="nav-button-img" src="http://res.cloudinary.com/jknapp25/image/upload/v1489124129/010-curriculum_mnwksm.png">
+          </div>
+          <div class="nav-button nav-button-4">
+          <img class="nav-button-img" src="http://res.cloudinary.com/jknapp25/image/upload/v1489124129/004-paper-airplane-outline_woiruz.png">
+          </div>
+        </div>
+
+
+
+        <!-- Video Page -->
+        <div class="orange">
+          <div class="video-page-content">
+            <p class="video-page-header">JOSH MAKES VIDEOS~</br></p>
+
+            <!-- First Video -->
+            <p class="video-title">Numero Uno</p>
+            <div class="videoWrapper video-page-img">
+                <iframe class="content" width="100%" height="auto"  src="https://www.youtube.com/embed/pi3JRa7lLMo" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <!-- Second Video -->
+            <p class="video-title">Numero Dos</p>
+            <div class="videoWrapper video-page-img">
+                <iframe float="left" width="100%" height="auto" src="https://www.youtube.com/embed/ID44SclRBhE" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <!-- Third Video -->
+            <p class="video-title">Numero Tres</p>
+            <div class="videoWrapper video-page-img">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/32dmZF-R8Ws" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <p class="video-title">More to come!</p>
+
+            <br></br>
+          </div>
+        </div>
+
+
+
+        <!-- Experiments Page -->
+        <div class="red">
+          <div class="experiments-page-content">
+            <p class="experiments-page-header">JOSH EXPERI-MENTS</br>~</p>
+
+            <div id="pagewrap">
+
+              <section class="experiments-card" id="content">
+                <img class="experiments-card-img" src="http://webneel.com/sites/default/files/images/manual/web-anim/beautiful-website-webdesign%20(45).jpg">
+              </section>
+              <section class="experiments-card" id="content">
+                <img class="experiments-card-img" src="http://www.webmaster-tips.net/images/stories/amazing_coming_soon_and_private_beta_pages/www_7write_com.png">
+              </section>
+              <section class="experiments-card" id="content">
+                <img class="experiments-card-img" src="https://lh5.googleusercontent.com/Avd8Zotqazvkv2S0BUhutH36uFBMNHCLHiROOHxhfVBBBrA9UnWaef37b3aABkvUu7w-43SBUg=s640-h400-e365">
+              </section>
+              <section class="experiments-card" id="content">
+                <img class="experiments-card-img" src="http://bashooka.com/wp-content/uploads/2013/11/website-concepts-bshk-1.jpg">
+              </section>
+              <section class="experiments-card" id="content">
+                <img class="experiments-card-img" src="http://www.webmaster-tips.net/images/stories/amazing_coming_soon_and_private_beta_pages/www_7write_com.png">
+              </section>
+              <section class="experiments-card" id="content">
+                <img class="experiments-card-img" src="http://webneel.com/sites/default/files/images/manual/web-anim/beautiful-website-webdesign%20(45).jpg">
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <!-- Resume Page -->
+        <div class="green">
+          <div class="resume-page-content">
+            <p class="resume-page-header">JOSH WORKED IN...
+            <br>~</br></p>
+
+            <p style="font-size:4vw; margin-bottom: 30px;">Robotics Labs, Construction Sites, Engineering Firms, Hotels, Offices, Warehouses, Retail Spaces, His Living Room</p>
+
+            <img class="resume-page-img" src="http://res.cloudinary.com/jknapp25/image/upload/v1489119224/Screen_Shot_2017-03-09_at_8.10.57_PM_qebhqt.png">
+            <p style="font-size:4vw; margin-bottom: 2px;">She Continues...</p>
+            <img class="resume-page-img" src="http://res.cloudinary.com/jknapp25/image/upload/v1489119223/Screen_Shot_2017-03-09_at_8.11.16_PM_xxyjz8.png">
+
+            <br></br>
+          </div>
+        </div>
+
+        <!-- Contact Page -->
+        <div class="blue">
+          <div class="contact-page-content">
+            <p class="contact-page-header">JOSH CAN BE REACHED
+            <br>~</br></p>
+            <h1>Together we can rule the world...</h1>
+
+            <br></br>
+            <h2>541-368-8091</h2>
+            <h2>joshknappp@gmail.com</h2>
+
+            <br></br>
+          </div>
+        </div>
+
+        <!-- Social Media Box -->
+        <div class="social-media-box">
+          <div class="icon-box">
+            <a href="https://www.youtube.com/channel/UCJ_tseZpNhgkU1Ytw7gAooA" target="_blank"><img class="social-media-icon" src="https://www.youtube.com/yt/brand/media/image/YouTube_light_color_icon.png"></a>
+          </div>
+          <div class="icon-box">
+            <a href="https://github.com/jknapp25" target="_blank"><img class="social-media-icon" src="http://www.iconsdb.com/icons/preview/white/github-6-xxl.png"></a>
+          </div>
+          <div class="icon-box">
+            <a href="https://stackoverflow.com/users/7144369/j-knapp" target="_blank"><img class="social-media-icon" src="http://www.iconsdb.com/icons/preview/white/stackoverflow-xxl.png"></a>
+          </div>
+          </div>
+        </div>
+
+
+      <!-- Close full window -->
+      </div>
+    <!-- Close fluid container -->
+    </div>
+
+    <!-- Add main.js -->
+    <script type="text/javascript" src="main.js"></script>
+
+  </body>
+</html>

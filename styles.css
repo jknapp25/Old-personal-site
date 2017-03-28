@@ -1,0 +1,337 @@
+/********* Welcome Text *************/
+#intro-slider-name {
+  position: fixed;
+  left: 0px;
+  margin-top: 0px;
+  margin-left: -500px;
+  line-height: 70%;
+  text-align: right;
+  color: white;
+  font-size: 30px;
+  transition: all .35s ease-in-out;
+  background-color: red;
+  padding: 12px 12px 0px 12px;
+  display: block;
+}
+#intro-slider-info {
+  position: fixed;
+  left: 0px;
+  margin-top: 0px;
+  margin-left: -500px;
+  line-height: 70%;
+  text-align: right;
+  color: white;
+  font-size: 30px;
+  transition: all .35s ease-in-out;
+  background-color: orange;
+  padding: 12px 12px 0px 12px;
+  display: block;
+}
+
+
+/************* Element Positions **************/
+.exact-center {
+  top: 50%;
+  left:50%;
+  margin-top: -100px;
+  margin-left: -100px;
+}
+
+.top-left {
+  top: 0%;
+  left: 0%;
+  margin-top: -50px;
+  margin-left: -50px;
+}
+
+.top-right {
+  top: 0%;
+  left: 100%;
+  margin-top: -50px;
+  margin-left: -150px;
+}
+
+.bottom-left {
+  top: 100%;
+  left: 0%;
+  margin-top: -150px;
+  margin-left: -50px;
+}
+
+.bottom-right {
+  top: 100%;
+  left: 100%;
+  margin-top: -150px;
+  margin-left: -150px;
+}
+
+/********** Nav Block *************/
+
+/* Scale Nav Block */
+.minimize-nav-block {
+  transform: scale(.5);
+}
+
+/*********** Window States **************/
+.full-window {
+  position: absolute;
+  top:0; right:0;
+  bottom:0; left:0;
+}
+
+/************ Navigation ****************/
+.nav-block {
+  width: 200px;
+  height: 200px;
+  position: fixed;
+  transition: all .65s ease-in-out;
+  z-index: 9999;
+}
+
+.nav-button {
+  height: 50%;
+  width: 50%;
+  display: block;
+  position: absolute;
+}
+
+.nav-button-1 {
+  background-color: orange;
+  transition: all .15s ease-in-out;
+}
+.nav-button-1:hover {
+  transform-origin: bottom right;
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.nav-button-2 {
+  left: 50%;
+  background-color: red;
+  transition: all .15s ease-in-out;
+}
+.nav-button-2:hover {
+  transform-origin: bottom left;
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.nav-button-3 {
+  top: 50%;
+  background-color: green;
+  transition: all .15s ease-in-out;
+}
+.nav-button-3:hover {
+  transform-origin: top right;
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.nav-button-4 {
+  top: 50%; left: 50%;
+  background-color: blue;
+  transition: all .15s ease-in-out;
+}
+.nav-button-4:hover {
+  transform-origin: top left;
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.nav-button-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+  margin-top: -24px;
+  margin-left: -24px;
+}
+
+/*********** Page Styles ************/
+/* Video Page */
+.video-page-content {
+  width: 65vw;
+  margin-left: 13%;
+  margin-top: 5%;
+  color: white;
+}
+.video-page-header {
+  font-size: 15vw;
+  padding: 0px;
+  margin-bottom: 20px;
+  line-height: 1em;
+}
+.video-page-icon {
+  width: 10vw;
+  margin-bottom: 40px;
+}
+.video-title {
+  font-size: 4vw;
+  padding: 0px;
+  margin-bottom: 0px;
+}
+.video-page-img {
+  margin-bottom: 20px;
+}
+
+/* Experiments Page */
+.experiments-page-content {
+  width: 65vw;
+  margin-left: 13%;
+  margin-top: 5%;
+  color: white;
+}
+.experiments-page-header {
+  font-size: 15vw;
+  padding: 0px;
+  margin-bottom: 20px;
+  line-height: 1em;
+}
+
+/* Resume Page */
+.resume-page-content {
+  width: 65vw;
+  margin-left: 13%;
+  margin-top: 5%;
+  color: white;
+}
+.resume-page-header {
+  font-size: 15vw;
+  padding: 0px;
+  margin-bottom: 20px;
+  line-height: 1em;
+}
+.resume-page-img {
+  width: 100%;
+}
+
+/* Contact Page */
+.contact-page-content {
+  width: 65vw;
+  margin-left: 13%;
+  margin-top: 5%;
+  color: white;
+}
+.contact-page-header {
+  font-size: 15vw;
+  padding: 0px;
+  margin-bottom: 20px;
+  line-height: 1em;
+}
+.contact-page-img {
+  background-color: blue;
+}
+
+/************ Social Media Box ************/
+.social-media-box {
+  display: inline-block;
+  position: fixed;
+}
+.social-media-icon {
+  /* TO DO: Center this */
+  position: absolute;
+  left: 13%;
+  width: 75%;
+}
+.icon-box {
+  width: 50px;
+  height: 50px;
+}
+.sm-box-tl {
+  top: 0%;
+  left: 0%;
+  margin-top: 135px;
+  margin-left: 25px;
+}
+.sm-box-tr {
+  top: 0%;
+  left: 100%;
+  margin-top: 135px;
+  margin-left: -75px;
+}
+.sm-box-bl {
+  top: 100%;
+  left: 0%;
+  margin-top: -275px;
+  margin-left: 25px;
+}
+.sm-box-br {
+  top: 100%;
+  left: 100%;
+  margin-top: -275px;
+  margin-left: -75px;
+}
+
+/*********** Video Aspect Ratios ************/
+.videoWrapper {
+     position: relative;
+     padding-bottom: 56.25%; /* 16:9 */
+     padding-top: 25px;
+     height: 0;
+}
+.videoWrapper iframe {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+}
+
+/********** Cards ***************/
+.experiments-card {
+  /* Add shadows to create the "card" effect */
+  transition: 0.3s;
+}
+.experiments-card-img {
+  border-radius: 0px;
+  width: 100%;
+}
+/* On mouse-over, add a deeper shadow */
+.experiments-card:hover {
+  transform: scale(1.1);
+}
+
+/************* Experiments Page Layout **************/
+/* STRUCTURE */
+
+#pagewrap {
+     padding: 4px;
+     width: 960px;
+     margin: 0px;
+  border: none;
+}
+#content {
+     width: 290px;
+     float: left;
+  margin: 10px;
+  background:none;
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+     #pagewrap {
+          width: 100%;
+     }
+     #content {
+          width: 41%;
+     }
+  .experiments-card-img {
+    width: 100%;
+  }
+}
+
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+     #content {
+          width: 100%;
+          float: none;
+    margin-bottom: 5px;
+     }
+  .experiments-card-img {
+    width: 100%;
+  }
+}
