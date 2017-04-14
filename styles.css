@@ -298,14 +298,14 @@
 /* STRUCTURE */
 
 #pagewrap {
-     padding: 4px;
-     width: 960px;
-     margin: 0px;
+  padding: 4px;
+  width: 960px;
+  margin: 0px;
   border: none;
 }
 #content {
-     width: 290px;
-     float: left;
+  width: 290px;
+  float: left;
   margin: 10px;
   background:none;
 }
