@@ -4,26 +4,14 @@
     <meta charset="utf-8">
     <link rel="icon" href="assets/coollogo_com-43871884.png" type="image/gif" sizes="16x16">
     <title>Josh Knapp</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
   <body>
-
-    <!-- To Do:
-        Make it so the whole thing can be accessed by scrolling
-        Add Contact Form
-        Consolidate Code
-          -Add multiple classes in one line
-          -Use code on parent elements to clean up event handlers
-    -->
 
     <!-- Fluid Page Container -->
     <div class="container-fluid">
@@ -42,16 +30,16 @@
         <!-- Nav block -->
         <div class="nav-block exact-center">
           <div class="nav-button nav-button-1">
-            <img class="nav-button-img" src="http://res.cloudinary.com/jknapp25/image/upload/v1489124129/009-video-camera_crp8jx.png">
+            <img class="nav-button-img" src="assets/video-camera.png">
           </div>
           <div class="nav-button nav-button-2">
-            <img class="nav-button-img" src="https://img.clipartfest.com/cac6bde106ac80709681a9b168718532_download-this-image-as-beaker-outline-clipart_522-598.png">
+            <img class="nav-button-img" src="assets/beaker.png">
           </div>
           <div class="nav-button nav-button-3">
-            <img class="nav-button-img" src="http://res.cloudinary.com/jknapp25/image/upload/v1489124129/010-curriculum_mnwksm.png">
+            <img class="nav-button-img" src="assets/resume.png">
           </div>
           <div class="nav-button nav-button-4">
-          <img class="nav-button-img" src="http://res.cloudinary.com/jknapp25/image/upload/v1489124129/004-paper-airplane-outline_woiruz.png">
+          <img class="nav-button-img" src="assets/paper-plane.png">
           </div>
         </div>
 
@@ -105,7 +93,7 @@
             <p class="resume-page-header">JOSH WORKED IN...
             <br>~</br></p>
 
-            <p style="font-size:4vw; margin-bottom: 30px;">Robotics Labs, Construction Sites, Engineering Firms, Hotels, Offices, Warehouses, Retail Spaces, His Living Room</p>
+            <p style="font-size:4vw; margin-bottom: 30px;">Robotics Labs, Construction Sites, Engineering Firms, Hotels, Corporate Offices, Warehouses, Retail Spaces, Living Rooms</p>
 
             <img class="resume-page-img" src="http://res.cloudinary.com/jknapp25/image/upload/v1489119224/Screen_Shot_2017-03-09_at_8.10.57_PM_qebhqt.png">
             <p style="font-size:4vw; margin-bottom: 2px;">She Continues...</p>
@@ -133,13 +121,13 @@
         <!-- Social Media Box -->
         <div class="social-media-box">
           <div class="icon-box">
-            <a href="https://www.youtube.com/channel/UCJ_tseZpNhgkU1Ytw7gAooA" target="_blank"><img class="social-media-icon" src="https://www.youtube.com/yt/brand/media/image/YouTube_light_color_icon.png"></a>
+            <a href="https://www.youtube.com/channel/UCJ_tseZpNhgkU1Ytw7gAooA" target="_blank"><img class="social-media-icon" src="assets/youtube.png"></a>
           </div>
           <div class="icon-box">
-            <a href="https://github.com/jknapp25" target="_blank"><img class="social-media-icon" src="http://www.iconsdb.com/icons/preview/white/github-6-xxl.png"></a>
+            <a href="https://github.com/jknapp25" target="_blank"><img class="social-media-icon" src="assets/github.png"></a>
           </div>
           <div class="icon-box">
-            <a href="https://stackoverflow.com/users/7144369/j-knapp" target="_blank"><img class="social-media-icon" src="http://www.iconsdb.com/icons/preview/white/stackoverflow-xxl.png"></a>
+            <a href="https://stackoverflow.com/users/7144369/j-knapp" target="_blank"><img class="social-media-icon" src="assets/stack-overflow.png"></a>
           </div>
           </div>
         </div>
@@ -151,8 +139,11 @@
     </div>
 
     <!-- Add main.js -->
-    <script type="text/javascript" src="main.js"></script>
-    <script type="text/javascript" src="getVideos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/getVideos.js"></script>
+    <script type="text/javascript" src="js/events.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
 
     <!-- Google Analytics -->
     <script>
@@ -163,7 +154,6 @@
 
       ga('create', 'UA-83108006-5', 'auto');
       ga('send', 'pageview');
-
     </script>
 
   </body>
