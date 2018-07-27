@@ -13,17 +13,12 @@ setTimeout(function(){ $("#intro-slider-name").css("margin-left", "-500px"); },3
 setTimeout(function(){ $("#intro-slider-info").css("margin-left", "0px"); },3000);
 setTimeout(function(){ $("#intro-slider-info").css("margin-left", "-500px"); },6000);
 
-
-
 /*--- global vars ---*/
 var active = false;
 var activePage = "";
 
-
-
 /*--- button objects ---*/
-var orangeButton =
-{
+var orangeButton = {
   color: "orange",
   translateNavBlock: function() {
     $(".nav-block").removeClass("exact-center");
@@ -31,73 +26,61 @@ var orangeButton =
     $(".nav-block").addClass("minimize-nav-block");
     $(".social-media-box").addClass("sm-box-br");
   },
-  openPage: function(){
+  openPage: function() {
     $("body").css("background-color","orange"); // This should be fixed so that I'm calling a class, and styling a container not the whole body
     $(".video-page-content").show();
     $(".social-media-box").show();
   }
 };
 
-var redButton =
-{
+var redButton = {
   color: "red",
-  translateNavBlock: function()
-  {
+  translateNavBlock: function() {
     $(".nav-block").removeClass("exact-center");
     $(".nav-block").addClass("bottom-left");
     $(".nav-block").addClass("minimize-nav-block");
     $(".social-media-box").addClass("sm-box-bl");
   },
-  openPage: function()
-  {
+  openPage: function() {
     $("body").css("background-color","red"); // This should be fixed so that I'm calling a class, and styling a container not the whole body
     $(".experiments-page-content").show();
     $(".social-media-box").show();
   }
 };
 
-var greenButton =
-{
+var greenButton = {
   color: "green",
-  translateNavBlock: function()
-  {
+  translateNavBlock: function() {
     $(".nav-block").removeClass("exact-center");
     $(".nav-block").addClass("top-right");
     $(".nav-block").addClass("minimize-nav-block");
     $(".social-media-box").addClass("sm-box-tr");
   },
-  openPage: function()
-  {
-    $("body").css("background-color","green"); // This should be fixed so that I'm calling a class, and styling a container not the whole body
+  openPage: function() {
+    $("body").css("background-color","green");
     $(".resume-page-content").show();
     $(".social-media-box").show();
   }
 };
 
-var blueButton =
-{
+var blueButton = {
   color: "blue",
-  translateNavBlock: function()
-  {
+  translateNavBlock: function() {
     $(".nav-block").removeClass("exact-center");
     $(".nav-block").addClass("top-left");
     $(".nav-block").addClass("minimize-nav-block");
     $(".social-media-box").addClass("sm-box-tl");
   },
-  openPage: function()
-  {
-    $("body").css("background-color","blue"); // This should be fixed so that I'm calling a class, and styling a container not the whole body
+  openPage: function() {
+    $("body").css("background-color","blue");
     $(".contact-page-content").show();
     $(".social-media-box").show();
   }
 };
 
-
-
 /*--- helper functions ---*/
 // Clear Active Page Content
-var clearPageContent = function(activePage)
-{
+var clearPageContent = function(activePage) {
 
     // Hide Page Content
     $(".video-page-content").hide();
@@ -127,22 +110,16 @@ var clearPageContent = function(activePage)
 
 };
 
-
-
 /*--- main function ---*/
-var main = function(clickedButton)
-{
+var main = function(clickedButton) {
 
-  if (active && clickedButton.color === activePage)
-  {
+  if (active && clickedButton.color === activePage) {
 
     clearPageContent(activePage);
     active = false;
     activePage = "";
 
-  }
-  else if (active)
-  {
+  } else if (active) {
 
     clearPageContent(activePage);
 
@@ -170,9 +147,7 @@ var main = function(clickedButton)
     active = true;
     activePage = clickedButton.color;
 
-  }
-  else
-  {
+  } else {
 
     switch(clickedButton.color) {
       case "orange":
